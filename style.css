@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-family: 'Old English Text MT';
+  color: white;
+}
+
+.menu-box {
+  height: 6.5em;
+  background-color: #1a1a1a;
+  display: block;
+}
+
+.menu-content a {
+  font-size: 5em;
+  color: white;
+  white-space: nowrap;
+}
+
+.menu-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-line {
+  background-color: #8B0000;
+  height: 0.4em;
+}
+
+.menu-image img {
+  width: 100%;
+  border-bottom: 0.5em solid black;
+}
+
+.menu-image {
+  width: 100%;
+  height: 20em;
+  overflow: hidden;
+}
+
+.band-sector {
+  height: 40em;
+  background-color: #1a1a1a;
+}
+
+.band-box {
+  display: flex;
+  justify-content: space-between;
+  height: 40em;
+  margin: 0 10%;
+  align-items: center;
+}
+
+.band-text {
+  width: 48%;
+}
+
+.band-image {
+  width: 48%;
+}
+
+.band-image img{
+  width: 100%;
+}
+
+.band-text a {
+  padding-bottom: 1em;
+  color: grey;
+}
+
+.footer-gradient {
+  height: 25em;
+  background: url('images/forest-bg-footer.png');
+  background-size: cover;
+}
+
+.footer-content {
+  margin: 0 10%;
+  display: flex;
+  gap: 1%;
+}
+
+.footer-content img {
+  height: 6em;
+  width: 6em;
+  margin-top: 18%;
+}
+
+.footer-content a {
+  font-size: 3em;
+  margin-top: 20%;
+}

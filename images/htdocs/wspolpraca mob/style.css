@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: 'Mulish', sans-serif;
+  color: #0c2563;
+}
+
+.box {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+label {
+  font-weight: 300;
+  margin-bottom: 1%;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-weight: 700;
+  color: white;
+}
+
+.thankyou1 {
+  font-size: 300%;
+  margin: 8% auto 2%;
+  text-align: center;
+}
+.thankyou2 {
+  font-size: 180%;
+  margin: 2% auto;
+  text-align: center;
+}
+.thankyou3 {
+  font-size: 150%;
+  font-weight: 500;
+  margin: 2% auto 4%;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  color: white;
+}
+
+menu {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  height: 12%;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+menu > .menu {
+  background-color: transparent;
+  margin: 0 20%;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  border-radius: 5em;
+}
+
+.leftMenu {
+  display: flex;
+}
+
+div.leftMenu > a > img {
+  width: 15vmin;
+  margin: 0;
+}
+
+.rightMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  gap: 3%;
+}
+
+.dropdown-menu {
+  display: none; /* Hide the dropdown menu by default */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+}
+
+.menu.active .dropdown-menu {
+  display: block; /* Show the dropdown menu when the menu is active */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #0c2563;
+}
+
+.flag {
+  height: 32px;
+  width: 32px;
+}
+
+.welcome-box {
+  width: 50%;
+  position: relative;
+}
+
+.welcome-text {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+
+.welcome {
+  font-size: 250%;
+  color: white;
+  font-weight: 900;
+}
+
+.img-box {
+  display: flex;
+}
+
+.image-box a {
+  color: white;
+  font-size:200%;
+}
+
+.bg-img {
+  background-image: url("images/ASSET_PC_PIC_Header.png");
+  min-height: 500px;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  gap: 5%
+}
+
+.content-wrapper {
+  margin: 50px 6% 0 6%;
+}
+
+.formcontent {
+  right: 0;
+  margin: 20px;
+  margin-right: 22%;
+  max-width: 45%;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  background-color: #f1f1f1;
+  opacity: 0.9;
+  border-top: 5px solid #0c2563;
+  width: 25%;
+}
+
+input[type=text] {
+  width: auto;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border: none;
+  background: white;
+  opacity: 2;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.input1 {
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 2%;
+  height: 5px;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#nationality {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+.buttonbox {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.button1 {
+  background-color: #0c2563;
+  color: white;
+  border-radius: 5px;
+  height: 60px;
+  width: 200px;
+  border: none;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+  margin: auto;
+}
+
+.button2 {
+  background-color: #96c2e9;
+  color: white;
+  border-radius: 5px;
+  height: 35px;
+  width: 140px;
+  border: none;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+}
+.button3 {
+  background-color: #0c2563;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: large;
+  margin: auto auto 8%;
+  display: block;
+}
+
+.content-wrapper a {
+  font-size: large;
+}
+
+.content-wrapper .list_image {
+  display: flex;
+  align-items: center;
+  vertical-align: text-top;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 320px) {
+  .list_image {
+    display: block;
+  }
+}
+
+.list_image img { 
+  max-width: 80%;
+  transform: translateX(10%);
+}
+
+.s-img-h img {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content-wrapper ul{
+  padding-left: 0;
+  list-style-position: outside;
+}
+
+.list_image li::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+  background-image: url(images/ASSET_ICO_Check.svg);
+} 
+
+.content-wrapper li {
+  font-size: medium;
+  padding-bottom: 15px;
+  list-style: none;
+  list-style-position: outside;
+}
+
+.information-box {
+  height: 400px;
+  background-color: #96c2e9;
+  margin-bottom: 80px;
+}
+
+.information-content {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.information-block img {
+  width: 25%;
+  height: 25%;
+}
+
+.information-block {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Mulish';
+  width: 25%;
+  vertical-align: top;
+}
+
+.vertical-line {
+  background-color: white;
+  width: 40%;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.information-block a {
+  color: white;
+}
+
+.information-content .prev-btn, .information-content .next-btn {
+  display: none;
+}
+
+.info-text {
+  font-weight: 100;
+}
+
+.info-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.offer-box {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  vertical-align: top;
+  gap: 3%;
+
+}
+
+.offer-img {
+  width: 150%;
+  height: 150%;
+}
+
+.offer-li {
+  background-image: url(images/ASSET_ICO_01.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
+.offer-text li::before{
+  vertical-align: top;
+  margin: 0;
+	background-repeat: no-repeat;
+	background-size: 25px;
+}
+
+.offer-text li {
+  padding-left: 6%;
+  padding-bottom: 27px;
+}
+
+.intro-form {
+  background-color: #f6f6f6;
+  position: absolute;
+  width: 60%;
+  transform: translateY(-65px);
+}
+
+.intro-box {
+  display: flex;
+  height: auto;
+  padding: 60px 3%;
+  vertical-align: middle;
+  gap: 2%;
+}
+
+.intro-img {
+  min-width: 50%;
+  margin: auto 0;
+  transform: translateY(8%);
+}
+
+.intro-title {
+  font-size: large;
+  margin-bottom: 50px;
+}
+
+.intro-description {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.intro-buttonbox {
+  padding-left: 3%;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.intro {
+  height: 600px;
+  background-color: #96c2e9;
+}
+
+.site {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.imgtitle {
+  width: 100%;
+  height: 100%;
+}
+
+.card1 {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  width: 280px;
+  margin-bottom: 50px;
+  transition-duration: 1s;
+}
+
+.card2 {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 240px;
+  margin-bottom: 50px;
+  transition-duration: 1s;
+}
+
+.card3 {
+  position: relative;
+}
+
+.botcardtext {
+  color: #0c2563;
+  margin-bottom: 0;
+}
+.bottitle {
+  margin-top: 100px;
+}
+
+.fotter {
+  background-color: white;
+  margin: 0 auto;
+  width: 90%;
+  height: 12%;
+  padding: 30px 5% 20px 5%;
+}
+
+footer > .fotter {
+  margin: 0;
+  display: flex;
+  height: 90%;
+  justify-content: space-between;
+}
+
+.leftfotter {
+  height: 30px;
+  width: 15vmin;
+  margin-right: -25%;
+}
+
+.leftfotter > a > img {
+  position: relative;
+  transform: translateY(-35%);
+}
+.rightfotter {
+  display: flex;
+  margin: auto;
+  gap: 5%;
+  width: 70%;
+  transform: translateY(-30%);
+  transform: translateX(10%);
+}
+.rightfotter > div > a {
+  font-size: large;
+}
+
+.lang-menu {
+  width: 65px;
+  text-align: right;
+  font-weight: bold;
+  position: relative;
+}
+.lang-menu .selected-lang {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 80px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a {
+  text-decoration: none;
+  width: 120px;
+  padding: 5px 10px;
+  display: block;
+}
+
+.lang-menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pl:before {
+  background-image: url("./images/ASSET_ICO_Flag_PL.svg");
+}
+
+.eng:before {
+  background-image: url("./images/Zasob_ENG.png");
+}
+
+.ua:before {
+  background-image: url("./images/Zasob_UA.png");
+}
+
+.ru:before {
+  background-image: url("./images/Zasob_RU.png");
+}
+
+.rodo-info {
+  display: flex;
+  padding: 10px;
+}
+
+.rodo-info > p {
+  color: #0c2563;
+}
+
+@media (max-width: 1530px) {
+  .intro-form {
+    width: 90%;
+  }
+  .intro {
+    height: 650px;
+  }
+  .site {
+    width: auto;
+  }
+}
+
+@media (max-width: 1070px) {
+  .intro {
+    height: 700px;
+  }
+}
+
+@media (max-width: 820px) {
+  .intro {
+    height: 800px;
+  }
+}
+
+/* Media Query to Display Burger Menu on Small Screens */
+@media (max-width: 768px) {
+  .burger-menu {
+      display: block; /* Show the burger menu on small screens */
+  }
+
+  .bg-img {
+    background-image: url(images/ASSET_MOB_PIC_Header.png);
+    background-position: top;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .rightMenu {
+      display: none; /* Hide the original menu on small screens */
+  }
+
+  .menu-checkbox:checked ~ .dropdown-menu {
+    display: block;
+  }
+
+  menu .menu {
+    margin: 0 2%;
+  }
+  
+  .formcontent {
+    display:block;
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 90%;
+    width: 70%;
+  }
+
+  .welcome-text {
+    position: unset;
+    right: 0;
+    float: right;
+    text-align: right;
+    margin-bottom: 100px;
+  }
+
+  .welcome-box {
+    width: 98%;
+    right: 0;
+  }
+
+  .list_image img {
+    display: none;
+  }
+  
+  .s-img-h img {
+    display: block;
+  }
+
+  .information-box {
+    width: 100vw;
+    position: relative;
+    height: 60vw;
+  }
+
+  .information-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .information-block {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    margin: 50px auto 0 auto;
+
+    width: 80%;
+  }
+
+  .information-block[data-active] {
+    opacity: 1;
+  }
+
+  .information-content .slider-btn {  
+    display: unset;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+    border: none;
+    top: 30%;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .next-btn {
+    right: 10%;
+  }
+
+  .prev-btn {
+    left: 10%;
+  }
+
+  .slider-btn:hover {
+    opacity: 0.3;
+  }
+
+}
+
+@media (max-width: 670px) {
+  .intro {
+    height: 900px;
+  }
+
+  .title {
+    height: 70px;
+  }
+
+  .rightfotter {
+    display: flex;
+    margin: 0;
+    gap: 4%;
+    width: 100%;
+    justify-content: center;
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+
+  .rodo-info p {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .intro {
+    height: 1000px;
+  }
+
+  .welcome {
+    font-size: 150%;
+  }
+
+  .lang-menu {
+    width: 50px;
+  }
+
+  .flag {
+    height: 24px;
+    width: 24px;
+  }
+
+  .information-box {
+    width: 100vw;
+    position: relative;
+    height: 95vw;
+  }
+  
+}
+
+@media (max-width: 500px) {
+
+  .bg-img {
+    background-image: url(images/ASSET_MOB_PIC_Header_2.png);
+  }
+
+  .lang-menu {
+    width: 50px;
+  }
+
+  .flag {
+    height: 24px;
+    width: 24px;
+  }
+
+  .information-box {
+    width: 100vw;
+    position: relative;
+    height: 90vw;
+  }
+  .intro {
+    height: 1300px
+  };
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+    <script src="audio-player.js"></script>
 <body>
     <menu>
         <div class="menu-line"></div>
@@ -31,6 +32,10 @@
                 </div>
                 <div class="band-image">
                     <img src="images/band1.png"/>
+                    <div id="player-behemoth" class="band-player">
+                        <img src="./images/play-icon.png">
+                        <audio id="audio-behemoth" src="./images/band1audio.mp3"></audio>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,6 +44,10 @@
             <div class="band-box">
                 <div class="band-image">
                     <img src="images/band2.png"/>
+                    <div id="player-profeci" class="band-player">
+                        <img src="./images/play-icon.png">
+                        <audio id="audio-profeci" src="./images/band2audio.mp3"></audio>
+                    </div>
                 </div>
                 <div class="band-text">
                 <h1 class="title">2. Profeci</h1>
@@ -63,6 +72,10 @@
                 </div>
                 <div class="band-image">
                     <img src="images/band3.png"/>
+                    <div id="player-batushka" class="band-player">
+                        <img src="./images/play-icon.png">
+                        <audio id="audio-batushka" src="./images/band3audio.mp3"></audio>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,6 +84,10 @@
             <div class="band-box">
                 <div class="band-image">
                     <img src="images/band4.png"/>
+                    <div id="player-mgla" class="band-player">
+                        <img src="./images/play-icon.png">
+                        <audio id="audio-mgla" src="./images/band4audio.mp3"></audio>
+                    </div>
                 </div>
                 <div class="band-text">
                     <h1 class="title">4. Mgła</h1>
@@ -97,6 +114,10 @@
                 </div>
                 <div class="band-image">
                     <img src="images/band5.png"/>
+                    <div id="player-furia" class="band-player">
+                        <img src="./images/play-icon.png">
+                        <audio id="audio-furia" src="./images/band5audio.mp3"></audio>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,5 +131,6 @@
         </div>
     </footer>
     <div class="menu-line"></div>
+    <script src="audio-player.js"></script>
 </body>
 </html>

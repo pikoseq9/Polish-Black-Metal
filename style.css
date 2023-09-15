@@ -79,6 +79,7 @@ menu {
 
 .band-image {
   width: 48%;
+  position: relative;
 }
 
 .band-image img{
@@ -111,4 +112,21 @@ menu {
 .footer-content a {
   font-size: 3em;
   margin-top: 20%;
+}
+
+.band-player {
+  height: 8em;
+  width: 8em;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  
+}
+
+#play-image {
+  cursor: pointer;
+}
+
+.band-player img {
+  cursor: pointer;
 }
